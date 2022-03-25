@@ -1,0 +1,77 @@
+.footer
+    background: #FED100
+    padding: 100px 10px
+    +tablet 
+        padding: 50px 10px
+    &_block
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-column-gap: 5%
+        +tablet 
+            grid-template-columns: 1fr 1fr
+        +tablet-small 
+            grid-template-columns: 1fr
+            text-align: center
+        &_items
+            +tablet 
+                margin-bottom: 46px
+    &_items
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &_logo
+        display: inline-block
+        font-weight: 600
+        font-size: 30px
+        line-height: 37px
+        margin-bottom: 44px
+    &_data
+        display: inline-block
+        font-weight: normal
+        font-size: 16px
+        line-height: 130.4%
+        color: #0E0F12
+    &_policy
+        margin-bottom: 36px
+        +tablet 
+            margin-bottom: 18px
+    &_links
+        display: inline-block
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 15px
+    &_icon
+        display: inline-block
+        width: 18px 
+        height: 18px
+        margin-right: 31px
+        margin-bottom: 20px
+.youtube
+    background: url(../img/yt.svg)
+.vkontakte
+    background: url(../img/vk.svg)
+.facebook
+    background: url(../img/fb.svg)
+.instagram
+    background: url(../img/insta.svg)
+    margin-right: 0
+
+.footer_back_calls
+    width: 260px
+    text-align: center
+    margin: 0 auto
+    &_btn
+        padding: 10px 30px
+        border: 1px solid #333333
+        margin-bottom: 5px
+    &_number
+        display: inline-block
+        text-decoration: underline
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        +mobile
+            display: none
+        
+

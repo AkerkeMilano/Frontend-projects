@@ -1,0 +1,65 @@
+.reviews
+    padding: 95px 10px
+    background: #FED100
+    text-align: center
+    +mobile-large
+        padding: 40px 10px
+    &_title
+        font-weight: 600
+        font-size: 30px
+        line-height: 37px
+        margin-bottom: 60px
+        +mobile-large
+            margin-bottom: 40px
+    &_list
+        display: grid 
+        grid-template-columns: 1fr 1fr 1fr
+        grid-column-gap: 2%
+        margin-bottom: 61px
+        +tablet-middle
+            grid-template-columns: 1fr 1fr
+            grid-column-gap: 5%
+        +mobile-large
+            grid-template-columns: 1fr
+            margin-bottom: 47px
+.reviews_block
+    text-align: left
+    &_title
+        font-weight: 600
+        font-size: 24px
+        line-height: 29px
+        margin-bottom: 10px
+    &_date
+        font-weight: normal
+        font-size: 16px
+        line-height: 21px
+        margin-bottom: 19px
+        display: flex
+        align-items: center
+        &::after
+            content: ''
+            display: inline-block
+            background: url(../img/star.svg) repeat-x
+            width: 80px
+            height: 16px
+            margin-left: 10px
+    &_text
+        font-weight: normal
+        font-size: 16px
+        line-height: 21px
+        margin-bottom: 18px
+    &_expand
+        font-weight: normal
+        font-size: 16px
+        line-height: 21px
+        text-decoration: underline
+    &_btn
+        border: 1px solid #333333
+
+.reviews_block_svetlana
+    +tablet-middle
+        display: none
+.reviews_block_irina
+    +mobile-large
+        display: none
+

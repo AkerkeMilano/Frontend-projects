@@ -1,0 +1,80 @@
+.movement_price
+    padding: 59px 10px 67px 10px
+    text-align: center
+    +tablet 
+        padding: 50px 10px 
+        background: #F8FBFF
+        width: 100%
+    &_title
+        font-weight: 600
+        font-size: 30px
+        line-height: 37px
+        margin-bottom: 15px
+        +mobile
+            font-size: 20px
+            line-height: 24px
+    &_text
+        font-weight: 600
+        font-size: 24px
+        line-height: 29px
+        margin-bottom: 60px
+        +tablet 
+            display: none
+    &_all_prices
+        font-size: 16px
+        line-height: 131.4%
+        text-decoration: underline
+        margin-top: 20px
+        display: none
+        +tablet 
+            display: inline-block
+    &_one_room
+        +tablet 
+            display: none
+    &_three_room
+        +tablet 
+            display: none
+
+.movement_price_apartment_type
+    padding: 70px 75px
+    border: 1px solid #EBEBEB
+    +desktop
+        padding: 40px 45px
+    +desktop-small
+        padding: 20px 25px
+    +tablet 
+        border: none
+        padding: 20px 0px
+    &_block
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-column-gap: 1%
+        justify-content: space-between   
+        +tablet 
+            display: block
+    &_info
+        text-align: center
+    &_title
+        font-weight: 600
+        font-size: 24px
+        line-height: 29px
+        margin-bottom: 60px
+        +mobile
+            font-size: 18px
+            line-height: 22px
+    &_list
+        font-size: 16px
+        line-height: 21px
+        list-style: none
+        margin-bottom: 60px
+        li
+            margin-bottom: 25px
+    &_price
+        font-weight: 600
+        font-size: 30px
+        line-height: 37px
+        margin-bottom: 52px
+    &:hover
+        border: 1px solid #FED100
+        +tablet 
+            border: none

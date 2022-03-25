@@ -1,0 +1,136 @@
+  
+.promo_bg
+    background: url(../img/promo-man.png) 60% bottom no-repeat, url(../img/promo-car.png) 90% center no-repeat
+    background-color: #FED100 
+    padding: 40px 0px 80px
+    +tablet
+        background: url(../img/promo-man.png) center 320px no-repeat
+        background-size: 248px 396px
+        background-color: #FED100 
+        padding-bottom: 40px
+        
+            
+.header
+    padding: 0 10px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 63px
+    &_logo
+        font-weight: 600
+        font-size: 30px
+        line-height: 37px
+    &_menu_link
+        font-weight: 500
+        font-size: 18px
+        line-height: 22px
+        margin-right: 50px
+        +tablet
+            display: none
+    &_phone
+        font-weight: 600
+        font-size: 24px
+        line-height: 29px
+        text-decoration: underline
+        +tablet
+            display: none
+    &_burger
+        width: 44px
+        height: 30px
+        background: url(../img/menuBurger.svg) center/cover no-repeat
+        border: none
+        display: none
+        +tablet
+            display: block
+.promo
+    padding: 0 10px
+    +tablet 
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-bottom: 40px
+        text-align: center
+    &_title
+        font-weight: bold
+        font-size: 70px
+        line-height: 126.9%
+        max-width: 480px
+        margin-bottom: 23px
+        +tablet 
+            text-align: center
+            font-size: 40px
+        +mobile
+            font-size: 28px
+    &_text
+        font-weight: 600
+        font-size: 30px
+        line-height: 37px
+        margin-bottom: 66px
+        +tablet 
+            text-align: center
+        +mobile 
+            font-size: 18px
+    &_btn_block
+        position: relative
+    &_btn
+        position: relative
+        width: 304px
+        height: 60px
+        border: none
+        font-weight: 600
+        font-size: 24px
+        line-height: 29px
+        color: #F2F2F2
+        background: #FF352B
+        transition: 0.3s
+        cursor: pointer
+        &:active
+            transform: translate(10px, 10px)
+            +tablet 
+                transform: translate(0, 0)
+        +tablet 
+            margin-top: 333px
+        +mobile
+            width: 100%
+    &_btn_border
+        position: absolute
+        border: 2px solid #F2F2F2
+        width: 304px
+        height: 60px
+        top: 10px
+        left: 10px
+        +tablet 
+            display: none
+    &_icons_block
+        margin-top: 77px
+        display: flex
+        align-items: center
+        +tablet 
+            display: none
+    &_icon
+        display: flex
+        width: 187px
+        font-weight: normal
+        font-size: 16px
+        line-height: 21px
+        +tablet 
+            display: none
+
+.icon_truck:before
+    background: url(../img/icon-truck.svg)
+.icon_box:before
+    background: url(../img/icon-triggerTwo.svg)
+.icon_money:before
+    background: url(../img/icon-money.svg)
+.promo_icon:before
+    content: ''
+    display: inline-block
+    min-width: 51px
+    min-height: 51px
+    margin-right: 10px
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+
+    

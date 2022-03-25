@@ -1,0 +1,96 @@
+.auto_type
+    padding: 35px 10px 46px 10px
+    text-align: center
+    &_title
+        font-weight: 600
+        font-size: 30px
+        line-height: 37px
+        margin-bottom: 15px
+        +mobile-large
+            font-size: 20px
+            line-height: 24px
+    &_text
+        font-weight: 600
+        font-size: 24px
+        line-height: 29px
+        margin-bottom: 60px
+        +tablet 
+            display: none
+    &_list
+        margin-bottom: 47px
+    &_link
+        display: inline-block
+        padding: 13px 63px
+        border: 1px solid #EBEBEB
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        margin-right: 19px
+        &:last-child
+            margin-right: 0
+        +tablet-middle 
+            padding: 0
+            border: none
+            margin-right: 27px
+        +mobile-large
+            font-size: 16px
+            line-height: 20px
+            
+        &:hover 
+            border: 1px solid #FED100
+    &_additional_text
+        font-weight: normal
+        font-size: 20px
+        line-height: 15px
+        display: none
+        +tablet 
+            display: block
+            margin-top: 20px
+            margin-bottom: 80px
+        +mobile-large
+            font-size: 12px
+    
+.auto_type_specifications
+    display: flex
+    justify-content: space-between
+    width: 80%
+    margin: 0 auto
+    +desktop
+        width: 90%
+    +tablet 
+        flex-direction: column-reverse
+        align-items: center
+    &_block
+        margin-top: 50px
+        text-align: left
+        +tablet 
+            margin-top: 0
+            text-align: center
+    &_title
+        font-weight: 600
+        font-size: 24px
+        line-height: 29px
+        margin-bottom: 37px
+        +tablet 
+            display: none
+    &_list 
+        list-style: none
+        font-weight: normal
+        font-size: 16px
+        line-height: 21px
+        +tablet 
+            display: none
+        li
+            margin-bottom: 28px
+            &::before
+                content: url(../img/checkIcon.svg)
+                margin-right: 15px
+        margin-top: 35px
+.auto_image
+    img
+        +tablet-middle 
+            width: 421px
+            height: 327px
+        +mobile-large
+            width: 291px
+            height: 197px

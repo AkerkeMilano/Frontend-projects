@@ -1,0 +1,57 @@
+.working_process
+    &_title
+        font-weight: 600
+        font-size: 30px
+        line-height: 37px
+        margin-bottom: 60px
+        text-align: center
+        +tablet-small
+            font-size: 20px
+            line-height: 24px
+    &_container
+        padding: 95px 100px 45px 100px
+        +tablet-small 
+            padding: 40px 47px 
+        +mobile 
+            padding: 40px 10px 40px 47px
+        
+.working_process_list
+    display: grid
+    grid-template-columns: 1fr 1fr
+    counter-reset: myCounter
+    list-style: none
+    grid-column-gap: 10%
+    grid-row-gap: 77px
+    +tablet
+        grid-template-columns: 1fr
+        grid-row-gap: 35px
+
+.working_process_item
+    display: flex
+    +tablet-small
+        align-items: center
+    &_title
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 15px
+        +tablet-small
+            font-size: 16px
+            line-height: 129.9%
+    &_text
+        font-weight: normal
+        font-size: 16px
+        line-height: 21px
+        +tablet-small 
+            display: none
+    &::before
+        counter-increment: myCounter
+        content: counter(myCounter, decimal-leading-zero)
+        display: inline-block
+        font-weight: 300
+        font-size: 50px
+        line-height: 45px
+        margin-right: 42px
+        width: 51px
+        height: 61px
+        text-shadow: 2px 2px #FED100

@@ -1,0 +1,79 @@
+.order_now
+    padding: 124px 10px 99px 10px
+    +tablet 
+        padding: 60px 10px 60px 10px
+    &_block
+        width: 80%
+        margin: 0 auto
+        +tablet 
+            text-align: center
+        +mobile-large 
+            width: 100%
+            margin: 0    
+    &_title
+        font-weight: 600
+        font-size: 30px
+        line-height: 37px
+        margin-bottom: 10px
+        +mobile-large 
+            font-size: 20px
+            line-height: 24px
+    &_text
+        font-weight: normal
+        font-size: 16px
+        line-height: 21px
+        margin-bottom: 47px
+        +mobile-large 
+            font-size: 15px
+            line-height: 131.4%
+    &_client_info
+        display: flex
+        align-items: flex-start
+        +tablet 
+            display: block
+      
+    &_input
+        display: inline-block
+        width: 300px
+        height: 30px
+        border: none
+        border-bottom: 1px solid #333333
+        background: transparent
+        outline: none
+        margin-right: 72px
+        margin-top: 15px
+        &::placeholder
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+            color: rgba(68, 50, 50, 0.7) 
+            +mobile-large
+                font-size: 16px
+                line-height: 20px
+        +tablet 
+            margin-right: 0
+        +mobile-large
+            width: 100%
+    &_name
+        +tablet 
+            margin-bottom: 40px
+    &_phone
+        +tablet 
+            margin-bottom: 60px
+    &_btn_text
+        display: flex
+        align-items: center
+        margin-top: 22px
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        text-align: center
+        letter-spacing: 0.015em
+        &::before
+            content: url(../img/checkbox.svg)
+            margin-right: 10px
+        +tablet 
+            justify-content: center
+    &_btn
+        width: 250px
+        margin-top: 0
